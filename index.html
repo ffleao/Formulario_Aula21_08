@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>FORMULÁRIO CADASTRO</title>
+</head>
+<body>
+    <h1>ATIVIDADE FORMULÁRIO HTML</h1>
+    <form action="/submit" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <label>Gênero:</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label><br><br>
+
+        <label for="pais">País:</label><br>
+        <select id="pais" name="pais" required>
+            <option value="brasil">Brasil</option>
+            <option value="portugal">Portugal</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+        <br>
+        Data Nascimento:
+        <br>
+        <input type="date">
+        <br><br>
+        Foto 3x4:
+        <br>
+        <input type="file">
+        <br><br>
+        <button type="submit">Enviar</button>
+        <input type="reset" name="resetar" value="Limpar">
+
+    </form>
+</body>
+</html>
